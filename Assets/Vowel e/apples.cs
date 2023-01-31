@@ -39,7 +39,7 @@ public class apples : MonoBehaviour
             Vector3 tmpPos = this.transform.position;
             tmpPos.y = Mathf.Clamp(tmpPos.y, -5.0f, 5.0f);
             this.transform.position = tmpPos;
-            this.gameObject.transform.position = Vector2.Lerp(this.gameObject.transform.position, new Vector2(treeapple.OBJ_treeapple.G_basket.transform.position.x, ypos), 0.1f);
+            this.gameObject.transform.position = Vector2.Lerp(this.gameObject.transform.position, new Vector2(treeapple.OBJ_treeapple.G_basket.transform.position.x, ypos), 5f);
            
         }
     }
